@@ -19,7 +19,7 @@
   "homepage": "https://github.com/regorodrijl/ProyectoCursoAngular1#readme",
   "devDependencies": {
     "angular": "^1.6.5",
-    "webpack": "^3.5.1",
-    "webpack-dev-server": "^2.7.0"
+    "webpack": "^3.5.2",
+    "webpack-dev-server": "^2.7.1"
   }
 }
