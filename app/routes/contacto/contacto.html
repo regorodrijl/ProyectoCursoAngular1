@@ -1,0 +1,20 @@
+<form name="formulario">
+    <b>Nombre:</b> <input name="nombre" ng-model="elemento.nombre" validador required>
+    <br/>
+    <b>Apellidos:</b><input name="apellidos" ng-model="elemento.apellidos" validador required>
+    <br/>
+    <b>E-Mail:</b><input name="email" ng-model="elemento.email" validador email>
+    <br/>
+    <b>Fecha Nacimiento:</b><input name="fecha" type="date" ng-model="elemento.fecha" validador required>
+    <br/>
+    <b>Mensaje</b><textarea name="texto" type="text" ng-model="elemento.texto" validador ></textarea>
+</form>
+<button type="submit" form="formulario" value="Submit">Enviar</button>
+<br/>
+<span ng-show="formulario.nombre.$invalid">El Nombre es necesario.</span>
+<br/>
+<span ng-show="formulario.apellidos.$touched &&formulario.apellidos.$invalid">Los apellidos son necesarios.</span>
+<br/>
+<span ng-show=" formulario.email.$invalid">El email es necesario.</span>
+<br/>
+<span ng-show="formulario.fecha.$invalid">La fecha de nacimiento no es válido.</span>

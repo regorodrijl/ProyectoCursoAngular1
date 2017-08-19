@@ -1,8 +1,30 @@
 <html ng-app="appTienda">
- <head>
-  <title>TU Tienda!</title>
- </head>
- <body>
-  <script src="vendor.js"></script>
- </body>
+
+<head>
+    <title>Tienda PLX</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="cabecera">
+        <div class="logo">
+                <a ui-sref="/"><img src="./src/plx.png" /></a>
+        </div>
+        <div class="nav">
+            <nav role="navigation">
+                <ul>
+                    <li><a ui-sref="productos">Productos</a></li>
+                    <li><a ui-sref="contacto">Contacto</a></li>
+                    <li><a ui-sref="sobre">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="cuerpo">
+        <div ui-view></div>
+    </div>
+    <script src="vendor.js"></script>
+    <script src="appTienda.js"></script>
+</body>
+
 </html>

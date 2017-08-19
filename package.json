@@ -13,13 +13,11 @@
   },
   "author": "Jose Luis Rego Rodríguez",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/regorodrijl/ProyectoCursoAngular1/issues"
-  },
-  "homepage": "https://github.com/regorodrijl/ProyectoCursoAngular1#readme",
-  "devDependencies": {
+  "dependencies": {
     "angular": "^1.6.5",
-    "webpack": "^3.5.1",
-    "webpack-dev-server": "^2.7.0"
+    "angular-ui-router": "^1.0.3",
+    "oclazyload": "^1.1.0",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
   }
 }
